@@ -40,16 +40,16 @@ cd PortFolio
 2. Open the HTML file in your browser:
 ```bash
 # On Windows
-start HTML/index.html
+start index.html
 
 # On macOS
-open HTML/index.html
+open index.html
 
 # On Linux
-xdg-open HTML/index.html
+xdg-open index.html
 ```
 
-Or simply double-click `HTML/index.html` in your file explorer.
+Or simply double-click `index.html` in your file explorer.
 
 ## 📋 Page Descriptions
 
