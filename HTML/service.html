@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000021;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 40px;
+            color: aqua;
+        }
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 40px;
+        }
+        .service-card {
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            background: white;
+            color: #000021;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(255,255,255,0.15);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            line-height: 1.6;
+            text-align: justify;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>My Services</h1>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h2>Full Stack Development</h2>
+            <p>I develop complete end-to-end web applications using the MERN stack (MongoDB, Express, React, Node.js). From UI design to backend APIs and database integration, I create scalable, secure, and responsive applications tailored to client needs.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Frontend Development</h2>
+            <p>Experienced in building clean, responsive, and interactive interfaces using HTML, CSS, JavaScript, ReactJS, and Bootstrap. I focus on modern UI/UX practices to deliver smooth and engaging user experiences.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Backend Development</h2>
+            <p>I design robust server-side applications using Node.js and Express, with secure REST APIs, authentication, middleware, and optimized database queries using MongoDB. I ensure high performance and clean architecture.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Java Applications</h2>
+            <p>With strong knowledge of Java and DSA, I build efficient, optimized Java applications and console-based tools. I also assist with problem-solving, algorithms, and performance-focused solutions.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>UI/UX & Interactive Components</h2>
+            <p>I create interactive elements like sliders, infinite scrollers, animations, and mini-games such as the Simon Game. These components enhance user engagement and modernize websites.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Custom Project Development</h2>
+            <p>I build tailored projects such as news platforms, rental listing systems, AI-based tools, and educational applications based on user requirements. Each project is optimized for performance and scalability.</p>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+

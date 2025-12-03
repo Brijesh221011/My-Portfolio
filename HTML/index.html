@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: poppins, sans-serif;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+        background: white; 
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+        /* background-color: red; */
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightSection {
+        width: 80%;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+        display: inline;
+        white-space: nowrap;
+      }
+
+      nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+      }
+      nav li a:hover {
+        color: rgb(153, 153, 226);
+        /* font-size: 1.01rem; */
+      }
+      .text-gray {
+        color: gray;
+        font-size: 1.2rem;
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+      }
+      .image-top {
+        width: 80px;
+        /* height: 100px;
+            margin: 20px; */
+      }
+      .secondSection .vertical {
+        display: flex;
+        align-items: center;
+        border-left: 4px solid purple;
+        width: 30%;
+        height: 250px;
+        float: left;
+        /* margin: 0 60px; */
+      }
+      .secondSection .vertical-title {
+        position: relative;
+        margin: 60px 0 0 20px;
+        width: 60%;
+        height: 200px;
+        /* color: black; */
+      }
+
+      footer {
+        background-color: #0e0e1a;
+        /* height: 233px; */
+      }
+
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul li {
+        list-style: none;
+        /* margin: 0 23px; */
+      }
+      .footer > div {
+        width: 223px;
+      }
+
+      footer .footer-rights {
+        text-align: center;
+        padding: 12px 0;
+        color: gray;
+      }
+      footer ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      footer ul li a:hover {
+        color: rgb(63, 63, 95);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Brijesh Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/about.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/projects.html">Projects</a></li>
+            <li><a href="../HTML/contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Brijesh Yadav</span>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn" onclick="downloadResume()">
+              Download Resume
+            </button>
+            <button class="btn" onclick="visitGithub()">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="../images/bg.png" alt="profile picture" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">Education completed so far</span>
+        <h1>Education</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="../images/Education.png" alt="" />
+            <div class="vertical-title">
+              <h2>Secondary Education</h2>
+              <h3>2018 - 2019</h3>
+              <p>Completed class 10th through CBSE medium school.</p>
+              <h3>Percentage : 91.6%</h3>
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="../images/Education.png" alt="" />
+            <div class="vertical-title">
+              <h2>Higher Secondary Education</h2>
+              <h3>2020 - 2021</h3>
+              <p>Completed class 12th through CBSE medium school.</p>
+              <h3>Percentage : 83.2%</h3>
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="../images/Education.png" alt="" />
+            <div class="vertical-title">
+              <h2>Bachelor of Technology</h2>
+              <h3>2022 - Present</h3>
+              <p>
+                Pursuing B.Tech in Computer Science and Engineering from Sharda
+                University,Greater Noida(U.P).
+              </p>
+              <h3>CGPA : 8.28</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Brijesh Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/about.html">About</a></li>
+            <li><a href="../HTML/service.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/byadav123/">LinkedIn</a>
+            </li>
+            <li><a href="https://github.com/Brijesh221011">GitHub</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li>
+              <a href="https://www.instagram.com/accounts/login/?hl=en"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        <p>Copyright &#169; 2025 Brijesh Yadav . All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Engineer", "MERN Developer"],
+        loop: true,
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="/JS/buttons.js"></script>
+  </body>
+</html>

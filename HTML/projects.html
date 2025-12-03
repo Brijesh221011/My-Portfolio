@@ -1,0 +1,212 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects - Brijesh Yadav</title>
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            font-family: poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+             /* background-color: rgb(0,0,13); */
+            background: #1e2167;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+             display: flex;
+             justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            margin:30px auto 20px auto;
+            color: #fff;
+        }
+        .project-card {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            
+            
+        }
+        h2 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .links a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .links a:hover {
+             color: rgb(63, 63, 95);
+             
+        }
+    </style> -->
+
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background: #1e2167;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: aqua;
+    font-size: 3.5rem;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.project-card {
+    width: 400px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.05);
+
+    display: flex;
+    flex-direction: column;   /* allows content to fill space vertically */
+    justify-content: space-between;
+    height: auto;             /* REMOVE fixed height */
+    min-height: 320px;        /* give natural height */
+    margin: 10px 30px 40px 0;
+}
+
+.project-card h2 {
+    
+    margin-bottom: 10px;
+    color: #1e2167;
+    text-align: center;
+}
+
+.project-card p {
+    flex-grow: 1;             /*description expands to fill available space*/
+    margin: 10px 0 20px 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.links a {
+    text-decoration: none;
+    margin: 10px 10px 0 0;
+    padding: 8px 14px;
+    background: #1e2167;
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.links a:hover {
+    background: #00e1ff;
+    color: #000;
+}
+</style>
+ </head>
+<body>
+    <div class="project">
+    <h1>My Projects</h1>
+<div class="container">
+   
+    <div class="project-card">
+    <h2>DynamicNews - Real-Time News Platform</h2>
+    <p>
+        DynamicNews is a real-time, modern news platform that provides short,
+        summarized, and category-wise news updates. Users can filter articles by
+        categories, sort the news by latest or oldest, and interact through likes and
+        comments. The platform includes an admin dashboard for managing posts and
+        monitoring user activity.
+    </p>
+    <div class="links">
+        <a href="https://dynamicnews-six.vercel.app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/Brijesh221011/DYNAMICNEWS" target="_blank">GitHub Repo</a>
+    </div>
+</div>
+
+
+ <div class="project-card">
+    <h2>StayHub - Home/Villa Renting Website</h2>
+    <p>
+        StayHub is a full-stack renting platform where property owners can list their
+        homes and villas. Built using Node.js, Express.js, MongoDB, HTML, CSS, and
+        JavaScript, it allows users to browse properties, view detailed descriptions,
+        and explore locations using the integrated map feature. The platform includes
+        secure authentication and a clean user-friendly interface.
+    </p>
+    <div class="links">
+        <a href="https://firstproject-xat4.onrender.com/listings" target="_blank">Live Demo</a>
+        <a href="https://github.com/Brijesh221011/FirstWebsite" target="_blank">GitHub Repo</a>
+    </div>
+</div>
+
+
+   <div class="project-card">
+    <h2>Simon Game</h2>
+    <p>
+        A classic color-pattern memory game built using HTML, CSS, and JavaScript.
+        The game generates a random sequence of flashing buttons, and the player's
+        task is to repeat the pattern correctly. The game becomes progressively
+        harder as the sequence length increases, helping players improve focus and
+        memory skills.
+    </p>
+    <div class="links">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="https://github.com/Brijesh221011/project1" target="_blank">GitHub Repo</a>
+    </div>
+</div>
+
+
+   <div class="project-card">
+    <h2>Infinite Scroller</h2>
+    <p>
+        The Infinite Scroller project features a smooth auto-loading UI with
+        repeating content. It uses Bootstrap cards for layout and includes a
+        custom animated loader to enhance user experience. The scrolling continues
+        seamlessly, making it ideal for blog feeds, product displays, or content
+        galleries.
+    </p>
+    <div class="links">
+        <a href="#" target="_blank" >Live Demo</a>
+        <a href="https://github.com/Brijesh221011/Infinite-Scroller-Post" target="_blank">GitHub Repo</a>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>  
+
+
