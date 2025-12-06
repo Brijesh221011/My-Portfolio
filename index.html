@@ -172,13 +172,147 @@
       footer ul li a:hover {
         color: rgb(63, 63, 95);
       }
+
+      /* Hamburger menu button */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+      }
+      .hamburger span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+      }
+      /* Rotate hamburger when menu is open */
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+      .right {
+        display: flex;
+      }
+
+      /* Tablet screens (max-width: 900px) */
+      @media (max-width: 900px) {
+        .leftSection {
+          font-size: 2.2rem;
+        }
+        nav ul {
+          gap: 12px;
+        }
+        nav li a {
+          font-size: 1rem;
+        }
+      }
+
+      /* Mobile screens (max-width: 600px) */
+      @media (max-width: 600px) {
+        .hamburger {
+          display: flex;
+        }
+        .right {
+          display: none;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          right: 0;
+          background-color: rgb(18, 18, 62);
+          flex-direction: column;
+          padding: 12px 0;
+          border-top: 1px solid rgb(170, 107, 228);
+        }
+        .right.active {
+          display: flex;
+        }
+        nav {
+          flex-direction: column;
+          height: 80px;
+          padding: 0 12px;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 0;
+          width: 100%;
+        }
+        nav ul li {
+          width: 100%;
+          padding: 12px 12px;
+        }
+        nav li a {
+          font-size: 1rem;
+        }
+        .firstSection {
+          margin: 60px 0;
+          padding: 0 16px;
+        }
+        .firstSection > div {
+          flex-basis: 100%;
+        }
+        .leftSection {
+          font-size: 1.8rem;
+          text-align: center;
+        }
+        .leftSection .buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 20px 0;
+        }
+        .leftSection .btn {
+          width: 100%;
+          font-size: 16px;
+          padding: 10px;
+        }
+        main hr {
+          margin: 30px 16px;
+        }
+        .secondSection {
+          max-width: 100%;
+          padding: 0 16px;
+          min-height: auto;
+        }
+        .secondSection h1 {
+          font-size: 1.5rem;
+        }
+        .secondSection .vertical {
+          flex-direction: column;
+          border-left: none;
+          padding-left: 0;
+          margin-bottom: 20px;
+        }
+        .footer {
+          flex-direction: column;
+          padding: 20px 16px;
+          gap: 1.5rem;
+        }
+        .footer > div {
+          flex: 1 1 100%;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
       <nav>
         <div class="left">Brijesh Portfolio</div>
-        <div class="right">
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="right" id="navMenu">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
@@ -289,6 +423,7 @@
         loop: true,
         typeSpeed: 50,
       });
+      
     </script>
     <script src="./buttons.js"></script>
   </body>

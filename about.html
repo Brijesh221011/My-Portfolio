@@ -5,78 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <style>
-            *{
-                margin: 0;
-                padding: 0;
-            
-            }
+            /* reset + predictable sizing */
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+
             body {
-
-                font-family: poppins, sans-serif;
-                margin: 0;
-                padding: 0;
-                background: #f5f5f5;
+                font-family: "Poppins", poppins, sans-serif;
                 background-color: rgb(0,0,33);
-                font-weight: 400;
                 color: #f5f5f5;
-                
-            }
-            h1{
-                text-align: center;
-                margin: 50px 0;
-                color: aqua;
-                font-size: 2.5rem;
+                line-height: 1.6;
+                font-weight: 400;
+                -webkit-font-smoothing: antialiased;
             }
 
-            .firstSection{
+            /* centered page container */
+            .container {
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 28px;
+            }
+
+            h1 {
+                text-align: center;
+                margin: 34px 0;
+                color: #9fe5ff;
+                font-size: 2.25rem;
+            }
+
+            /* Intro row: flexible two-column layout that wraps */
+            .firstSection {
                 display: flex;
-                justify-content: space-evenly;
+                gap: 2rem;
                 align-items: center;
-                margin: 30px 0;
-            } 
-            .firstSection > div{
-                width:40%;
-                text-align: justify;
-                
-                /* background-color: red; */
-               
+                margin: 24px 0;
+                flex-wrap: wrap;
             }
-            h2{
-                margin-bottom: 15px;
-                color: aqua;
-                font-size: 2rem;
+            .firstSection > .section {
+                flex: 1 1 420px; /* flexible columns */
+                min-width: 260px;
+                text-align: left;
             }
-            .section img{
-                height: 50vh;
-                width: 60vh;
-                margin: 20px 0 0 40px;
-               
+
+            h2 {
+                margin-bottom: 12px;
+                color: #9fe5ff;
+                font-size: 1.8rem;
             }
-            
+
+            /* images: fluid and don't use vh/vw fixed sizes */
+            .section img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+                margin-top: 12px;
+            }
+
             p, li {
                 line-height: 1.6;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 500;
+                color: #e9eef6;
             }
-            .secondSection{
+
+            /* Education / skills area */
+            .secondSection {
                 display: flex;
-                justify-content: space-evenly;
+                gap: 2rem;
                 align-items: flex-start;
-                text-align: justify;
-                margin: 50px 0;
+                margin: 40px 0;
+                flex-wrap: wrap;
             }
-            .secondSection > div{
-                width:40%;
-                /* background-color: red; */
+            .secondSection > .section {
+                flex: 1 1 420px;
+                min-width: 260px;
+            }
+
+            /* spacing for lists */
+            ul { padding-left: 1rem; margin-top: 8px; }
+            li { margin: 8px 0; }
+
+            /* small visual tweaks */
+            .image-top { width: 80px; }
+
+            /* Responsive breakpoints */
+            @media (max-width: 900px) {
+                h1 { font-size: 2rem; }
+                .container { padding: 20px; }
+                .firstSection { gap: 1.25rem; }
+            }
+
+            @media (max-width: 600px) {
+                h1 { font-size: 1.6rem; margin-top: 20px; }
+                /* stack sections vertically with image on top for mobile */
+                .firstSection { flex-direction: column-reverse; margin: 18px 0; }
+                .firstSection > .section { text-align: center; }
+                .firstSection > .section img { margin: 0 auto; max-width: 320px; }
+                .left-col-text { text-align: center; }
+                .secondSection { flex-direction: column; gap: 18px; }
+                p, li { font-size: 0.98rem; }
             }
     </style>
 </head>
 <body>
     <div class="container">
-      <h1>About Me</h1>
-      <div class="firstSection">
-        <div class="section">
-        <h2>Hi, I'm Brijesh Yadav</h2>
+       <h1>About Me</h1>
+       <div class="firstSection">
+        <div class="section left-col-text">
+         <h2>Hi, I'm Brijesh Yadav</h2>
        <p>
         I am a passionate Software Engineer and Full Stack Web Developer enthusiast currently pursuing my B.Tech in Computer Science 
         Engineering at Sharda University (7th Semester). I love building impactful digital products, solving challenging problems, and
@@ -90,32 +125,32 @@
         <div class="section">
          <img src="./profileimg.png" alt="profile picture"/>
         </div>
-      </div>
-
-      <div class="secondSection">
-        <div class="section">
-            <h2>Skills & Technologies</h2>
-            <ul>
+       </div>
+ 
+       <div class="secondSection">
+         <div class="section">
+             <h2>Skills & Technologies</h2>
+             <ul>
                 <li><strong>Programming Languages:</strong> Java</li>
                 <li><strong>Databases:</strong> SQL, MongoDB</li>
                 <li><strong>Frontend:</strong> HTML, CSS, JavaScript, ReactJS</li>
                 <li><strong>Backend:</strong> Node.js, Express.js</li>
                 <li><strong>Other Skills:</strong> REST APIs, Full-stack development, Data Structure and Algorithm(DSA)</li>
-            </ul>
-        </div>
+             </ul>
+         </div>
 
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
+         <div class="section">
+             <h2>Projects</h2>
+             <ul>
                 <li><strong>DynamicNews:</strong> A MERN stack news platform with user authentication, admin controls, category filtering, likes, and comments.</li>
                 <li><strong>StayHub:</strong> A complete home/villa renting platform built using HTML, CSS, JavaScript, Node.js, Express, and MongoDB.</li>
                 <li><strong>Simon Game:</strong> A fun memory game built using HTML, CSS, and JavaScript.</li>
                 <li><strong>Infinite Scroller:</strong> A UI-enhanced infinite scroll project built with Bootstrap and custom CSS.</li>
                 
-            </ul>
-        </div>
-      </div>
-   </div>
-</body>
+             </ul>
+         </div>
+       </div>
+     </div>
+ </body>
 </html>
 
